@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Maulishree</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Flexbox Container */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #a1c4fd;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1.2px;
+        }
+
+        /* Main Content */
+        main {
+            padding: 40px 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .section {
+            margin-bottom: 60px;
+            width: 100%;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #333;
+            border-bottom: 2px solid #a1c4fd;
+            padding-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        /* Flexbox for content alignment */
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .flex-item {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* Placeholder Image */
+        .img-container {
+            background-color: #ddd;
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .img-container p {
+            font-size: 1.5em;
+            color: #888;
+        }
+
+        /* Contact Form */
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact input,
+        .contact textarea {
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .contact input[type="submit"] {
+            background-color: #a1c4fd;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .contact input[type="submit"]:hover {
+            background-color: #b9d5ff;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #a1c4fd;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meet Maulishree</h1>
+    </header>
+
+    <main class="container">
+        <!-- About Section -->
+        <section class="section">
+            <div class="flex-container">
+                <div class="flex-item">
+                    <h2>About Maulishree</h2>
+                    <p>
+                        Maulishree is a passionate 13-year-old with an exceptional love for both Physics and Mathematics. 
+                        Numbers, equations, and the mysteries of Physics are her playground, where she finds joy in solving complex problems and uncovering new ideas.
+                        Whether she's singing Heart Attack or unraveling mathematical theorems, Maulishree brings fun and curiosity to everything she touches.
+                    </p>
+                    <p>
+                        In addition to her love for the sciences, Maulishree enjoys immersing herself in captivating stories. 
+                        Her favorite series is the Twisted series by Ana Huang, where characters like Alex Volkov and Rhys Larsen fuel her imagination. 
+                        The rich world of romance and intricate relationships is something she truly enjoys reading about.
+                    </p>
+                </div>
+                <div class="flex-item img-container">
+    <img src="An_img.jpg" alt="Image of Maulishree" style="width: 100%; height: auto; border-radius: 10px;">
+</div>
+
+            </div>
+        </section>
+
+        <!-- Message from Yashika -->
+        <section class="section">
+            <h2>Message from Yashika</h2>
+            <p>
+                Hey Maulishree, I just wanted to say how incredibly lucky I feel to have you as a friend. 
+                You’re honestly such a smart and kind person, with a mind that is constantly learning and exploring the world in ways that inspire me.
+                Whether it’s diving deep into a novel or solving math problems, you do it all with so much passion, and that’s something I truly admire about you. I know we haven't exactly been to close since forever, or had the best history ever, but now we do, and thats all that matters.
+            </p>
+            <p>
+                I know you sometimes deal with a lot (who doesn’t, right?), but remember that you’ve always got people around you who care and are here to support you.
+                I’m lucky to know you and excited to see where your talents and hard work will take you.
+                Stay awesome, stay curious, and always keep dreaming big. You’ve got so much ahead of you, and I’m always here if you need me.
+            </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Get in Touch</h2>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfYToT3SwT1uk_rjaXT1w1VJctJpGF1m-eMDVVmw9Qt-NtGXA/viewform?embedded=true" width="640" height="645" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 A gift for Maulishree</p>
+    </footer>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Your message has been sent. Thank you!');
+        });
+    </script>
+</body>
+</html>
